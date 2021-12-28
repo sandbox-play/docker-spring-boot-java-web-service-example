@@ -4,7 +4,7 @@ WORKDIR /usr/src/mymaven/
 RUN mvn clean package
 
 # Use an official OpenJDK runtime as a parent image
-FROM openjdk:8-jre-alpine
+FROM openjdk:8-jdk-alpine
 MAINTAINER "opstree <deepak.yadav@opstree.com>"
 # set shell to bash
 # source: https://stackoverflow.com/a/40944512/3128926
